@@ -24,7 +24,6 @@ const Navigation = ({ handleShowSidebar, user }) => {
       width: '100%',
       height: '8vh',
       padding: '0 .5rem 0 .5rem',
-      backgroundColor: '#85cad4',
       zIndex: 1,
       opacity: '.85',
     },
@@ -32,7 +31,7 @@ const Navigation = ({ handleShowSidebar, user }) => {
       gridColumnStart: 1,
       gridColumnEnd: 2,
       justifySelf: 'start',
-      color: '#fff',
+      color: '#0A95A8',
     },
     logoContainer: {
       gridColumnStart: 2,
@@ -47,7 +46,6 @@ const Navigation = ({ handleShowSidebar, user }) => {
       gridColumnStart: 3,
       gridColumnEnd: 4,
       justifySelf: 'end',
-      color: '#fff',
     },
   };
 
@@ -59,7 +57,7 @@ const Navigation = ({ handleShowSidebar, user }) => {
       </Link>
       {!user && (
         <Link to="/login" style={styles.login}>
-          <AccountCircleIcon fontSize="large" />
+          <AccountCircleIcon fontSize="large" style={{ color: '#0A95A8' }} />
         </Link>
       )}
     </div>
